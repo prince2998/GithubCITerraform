@@ -20,12 +20,6 @@ jobs:
         with:
           node-version: '14'  # Use Node.js 14 or higher
 
-      - name: Install Terraform
-        run: |
-          curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
-          sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
-          sudo apt-get update && sudo apt-get install terraform
-
       - name: Terraform Init
         run: terraform init
         #working-directory: .
