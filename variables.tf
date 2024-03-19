@@ -9,4 +9,6 @@ variable "ami_id" {
 variable "instance_type" {
   type = string
 }
-
+variable "profile" {
+  type = string
+}
