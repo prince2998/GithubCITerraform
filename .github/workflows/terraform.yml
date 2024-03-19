@@ -12,13 +12,13 @@ jobs:
 
     steps:
 
-      - name: Checkout Repository
-        uses: actions/checkout@v3
+      #- name: Checkout Repository
+      #  uses: actions/checkout@v3
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '14'  # Use Node.js 14 or higher
+      #- name: Setup Node.js
+      #  uses: actions/setup-node@v3
+      #  with:
+      #   node-version: '14'  # Use Node.js 14 or higher
 
       - name: Terraform Init
         run: terraform init
