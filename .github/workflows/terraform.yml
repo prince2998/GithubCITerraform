@@ -17,7 +17,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '15'  # Use Node.js 14 or higher
+          node-version: '14'  # Use Node.js 14 or higher
 
       - name: Install Terraform
         run: |
